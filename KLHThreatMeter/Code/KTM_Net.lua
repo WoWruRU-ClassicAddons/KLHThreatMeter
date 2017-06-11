@@ -241,11 +241,10 @@ me.checkspellvaluesyntax = function(allvalues)
 	end
 	
 	-- 4th parameter is value
-	value = allvalues[4]
-	
+						
 	-- multiplier / addition: need number
 	if (parameter == "addition") or (parameter == "multiplier") then
-		value = tonumber(value)
+		value = tonumber(allvalues[4])
 		
 		if value == nil then
 			
@@ -254,7 +253,7 @@ me.checkspellvaluesyntax = function(allvalues)
 		end
 		
 	elseif parameter == "ticks" then
-		value = tonumber(value)
+		value = tonumber(allvalues[4])
 		
 		if (value == nil) or (math.floor(value) ~= value) or (value < 1) then
 			

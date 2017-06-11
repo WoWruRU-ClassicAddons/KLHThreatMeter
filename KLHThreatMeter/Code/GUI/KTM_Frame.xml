@@ -12,14 +12,6 @@
 
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 	
-<Button name="test" virtual="true">
-	<NormalText name="$parentText" inherits="GameFontNormal">
-	</NormalText>
-</Button>
-    
-<Button name ="test2" inherits="test"> </Button>
-
-
 	<!-- The base font -->
 	<Font name="KLHTM_FontDefault" inherits="GameFontNormal" virtual="true">
 		<Color r="1.0" g="1.0" b="1.0"/>
@@ -36,12 +28,12 @@
 	
 	<!-- Used by column headers -->
 	<Font name="KLHTM_FontYellowRight" inherits="KLHTM_FontRight" virtual="true">
-		<Color r="1.0" g="0.82" b="0"/>
+		<Color r="1.0" g="1.0" b="1.0"/>
 	</Font>
 	
 	<!-- Used by the "name" column headers -->
 	<Font name="KLHTM_FontYellowLeft" inherits="KLHTM_FontLeft" virtual="true">
-		<Color r="1.0" g="0.82" b="0"/>
+		<Color r="1.0" g="1.0" b="1.0"/>
 	</Font>
 	
 	
@@ -176,7 +168,7 @@
 					<Offset x="-2" y="2"/>
 				</Anchor>
 			</Anchors>
-			<Color r="1.0" g="1.0" b="0" a="0.1"/> 
+			<Color r="1.0" g="1.0" b="1.0" a="0.1"/> 
 		</HighlightTexture>
 	</Button>
 	
@@ -190,7 +182,7 @@
 				<Offset x="-2" y="2"/>
 			</Anchor>
 		</Anchors>
-		<Color r="0.7" g="0" b="0"/>
+		<Color r="0.7" g="0.0" b="0.0"/>
 	</Texture>
 	
 	<!-- A data row for a single person in the raid -->
@@ -330,7 +322,7 @@
 									<Offset x="1" y="0"/>
 								</Anchor>
 							</Anchors>
-							<Color r="1.0" g="1.0" b="1.0" a="1.0"/>
+							<Color r="0.0" g="0.0" b="1.0" a="1.0" />
 						</Texture>
 					</Layer>
 				</Layers>
@@ -417,11 +409,9 @@
 							<OnClick> KLHTM_TitleButton_OnClick("close"); </OnClick>
 							<OnEnter> KLHTM_TitleButton_OnEnter("close"); </OnEnter>
 						</Scripts>
-						<NormalTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Up">
-							<TexCoords left="0.175" top="0.175" right="0.825" bottom="0.825"/>
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Close">
 						</NormalTexture>
-						<PushedTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Down">
-							<TexCoords left="0.175" top="0.175" right="0.825" bottom="0.825"/>
+						<PushedTexture file="Interface\Addons\KLHThreatMeter\Images\Closep">
 						</PushedTexture>
 					</Button>
 					<!-- Minimise -->
@@ -433,8 +423,7 @@
 							<OnClick> KLHTM_TitleButton_OnClick("min"); </OnClick>
 							<OnEnter> KLHTM_TitleButton_OnEnter("min"); </OnEnter>
 						</Scripts>
-						<NormalTexture file="Interface\Buttons\UI-MinusButton-UP">
-							<TexCoords left="0.05" top="0.05" right="0.95" bottom="0.95"/>
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Minimise">
 						</NormalTexture>
 					</Button> 
 					<!-- Maximise -->
@@ -446,8 +435,7 @@
 							<OnClick> KLHTM_TitleButton_OnClick("max"); </OnClick>
 							<OnEnter> KLHTM_TitleButton_OnEnter("max"); </OnEnter>
 						</Scripts>
-						<NormalTexture file="Interface\Buttons\UI-PlusButton-UP">
-							<TexCoords left="0.05" top="0.05" right="0.95" bottom="0.95"/>
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Maximise">
 						</NormalTexture>
 					</Button>
 					<!-- Options -->
@@ -464,11 +452,9 @@
 								<Texture inherits="KLHTM_ButtonBackground"/>
 							</Layer>
 						</Layers>
-						<NormalTexture file="Interface\ChatFrame\UI-ChatIcon-Chat-Up">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Options">
 						</NormalTexture>
-						<PushedTexture file="Interface\ChatFrame\UI-ChatIcon-Chat-Down">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<PushedTexture file="Interface\Addons\KLHThreatMeter\Images\Optionsp">
 						</PushedTexture>
 					</Button>
 					<!-- Pin -->
@@ -485,11 +471,9 @@
 								<Texture inherits="KLHTM_ButtonBackground"/>
 							</Layer>
 						</Layers>
-						<NormalTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Up">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Unlocked">
 						</NormalTexture>
-						<PushedTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Down">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<PushedTexture file="Interface\Addons\KLHThreatMeter\Images\Unlockedp">
 						</PushedTexture>
 					</Button>
 					<!-- Unpin -->
@@ -506,11 +490,9 @@
 								<Texture inherits="KLHTM_ButtonBackground"/>
 							</Layer>
 						</Layers>
-						<NormalTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollUp-Up">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Locked">
 						</NormalTexture>
-						<PushedTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollUp-Down">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<PushedTexture file="Interface\Addons\KLHThreatMeter\Images\Lockedp">
 						</PushedTexture>
 					</Button>
 					<!-- Self View -->
@@ -527,11 +509,9 @@
 								<Texture inherits="KLHTM_ButtonBackground"/>
 							</Layer>
 						</Layers>
-						<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Up">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Selfv">
 						</NormalTexture>
-						<PushedTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Down">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<PushedTexture file="Interface\Addons\KLHThreatMeter\Images\Selfvp">
 						</PushedTexture>
 					</Button>
 					<!-- Raid View -->
@@ -548,11 +528,9 @@
 								<Texture inherits="KLHTM_ButtonBackground"/>
 							</Layer>
 						</Layers>
-						<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Up">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Raidv">
 						</NormalTexture>
-						<PushedTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Down">
-							<TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+						<PushedTexture file="Interface\Addons\KLHThreatMeter\Images\Raidvp">
 						</PushedTexture>
 					</Button>
 					<!-- Master Target Set -->
@@ -564,7 +542,7 @@
 							<OnClick> KLHTM_TitleButton_OnClick("targ"); </OnClick>
 							<OnEnter> KLHTM_TitleButton_OnEnter("targ"); </OnEnter>
 						</Scripts>
-						<NormalTexture file="Interface\Icons\Ability_Hunter_SniperShot">
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Target">
 							<Anchors>
 								<Anchor point="TOPLEFT">
 									<Offset x="1" y="-1"/>
@@ -584,11 +562,9 @@
 							<OnClick> KLHTM_TitleButton_OnClick("clear"); </OnClick>
 							<OnEnter> KLHTM_TitleButton_OnEnter("clear"); </OnEnter>
 						</Scripts>
-						<NormalTexture file="Interface\Buttons\CancelButton-Up">
-							<TexCoords left="0.275" top="0.2" right="0.8" bottom="0.725"/>
+						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Reset">
 						</NormalTexture>
-						<PushedTexture file="Interface\Buttons\CancelButton-Down">
-							<TexCoords left="0.275" top="0.2" right="0.8" bottom="0.725"/>
+						<PushedTexture file="Interface\Addons\KLHThreatMeter\Images\Resetp">
 						</PushedTexture>
 					</Button>
 				</Frames>
@@ -1123,67 +1099,7 @@
 			</OnLoad>
 		</Scripts>
 	</Frame>
-	<!-- 地图按钮-->
-	<Button name="KTM_MiniMapButtonFrame" parent="Minimap" enablemouse="true" movable="true">
-		<Size>
-			<AbsDimension x="32" y="32"/>
-		</Size>
-		<Anchors>
-			<Anchor point="CENTER">
-				<Offset x="-70" y="-42"/>
-			</Anchor>
-		</Anchors>	
-		<Layers>
-			<Layer level="ARTWORK">
-				<Texture name="$parentBg" file="Interface\icons\Ability_Seal">
-					<Size>
-						<AbsDimension x="24" y="24"/>
-					</Size>
-					<Anchors>
-						<Anchor point="CENTER">
-							<Offset x="0" y="0"/>
-						</Anchor>
-					</Anchors>
-				</Texture>
-			</Layer>
-			<Layer level="OVERLAY">
-				<Texture name="$parentIcon" file="Interface\Minimap\MiniMap-TrackingBorder">
-					<Size>
-						<AbsDimension x="60" y="60"/>
-					</Size>
-					<Anchors>
-						<Anchor point="CENTER" relativeTo="$parentBg" relativePoint="CENTER">
-							<Offset x="12" y="-12"/>
-						</Anchor>
-					</Anchors>
-				</Texture>	             		
-			</Layer>
-			</Layers>
-			<Scripts>
-			<OnClick>
-             if KLHTM_windowsopened then KLHTM_SetVisible(false);KLHTM_windowsopened=nil;else KLHTM_SetVisible(true);KLHTM_windowsopened=true;end
-			</OnClick>
-		    <OnMouseDown>
-				KTM_MouseDown();
-		    </OnMouseDown>
-		    <OnMouseUp>
-				KTM_MouseUp();
-		    </OnMouseUp>
-		    <OnUpdate>
-				KTM_MoveButton();
-				KTM_MoveButton();
-		    </OnUpdate>		
-			<OnEnter>
-			  GameTooltip:Show();
-			  GameTooltip:SetOwner(this, "ANCHOR_BOTTOMRIGHT");
-			  GameTooltip:SetText("点击左键调出仇恨统计窗口\n点击右键移动按钮")
-			</OnEnter>
-			<OnLeave>
-			  GameTooltip:Hide();			  
-			</OnLeave>
-			</Scripts>
-			<HighlightTexture alphaMode="ADD" file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight"/>
-	 </Button>	
+		
 	
 </Ui>
 

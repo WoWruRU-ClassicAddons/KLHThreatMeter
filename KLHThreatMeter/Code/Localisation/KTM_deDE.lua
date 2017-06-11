@@ -1,18 +1,36 @@
 ﻿
 klhtm.string.data["deDE"] = 
 {
+	
 	["binding"] = 
 	{
 		hideshow = "Fenster zeigen/verstecken",
 		stop = "Notaus",
-		mastertarget = "Hauptziel setzen/l\195\182schen",
+		mastertarget = "Hauptziel setzen",
 		resetraid = "Raidbedrohung l\195\182schen",
 	},
+
+
 	["spell"] = 
 	{
-		-- 17.20
-		["execute"] = "Hinrichten",
 		
+		["holynova"] = "Heilige Nova", -- no heal or damage threat
+		["siphonlife"] = "Lebensentzug", -- no heal threat
+		
+		
+		["drainlife"] = "Blutsauger", -- no heal threat
+		["lifetap"] = "Aderlass", -- no mana gain threat
+		["holyshield"] = "Heiliger Schild", -- multiplier
+		["tranquility"] = "Gelassenheit",
+		["distractingshot"] = "Ablenkender Schuss", 
+		["earthshock"] = "Erdschock",
+		["rockbiter"] = "Felsbei\195\159er",
+		["fade"] = "Verblassen",
+		["thunderfury"] = "Donnerzorn",
+		
+		["deathcoil"] = "Todesmantel",
+
+
 		["heroicstrike"] = "Heldenhafter Sto\195\159",
 		["maul"] = "Zermalmen",
 		["swipe"] = "Prankenhieb",
@@ -31,42 +49,16 @@ klhtm.string.data["deDE"] =
 		["scorch"] = "Versengen",
 		["cleave"] = "Spalten",
 		
-		hemorrhage = "Blutsturz",
-		backstab = "Meucheln",
-		sinisterstrike = "Finsterer Sto\195\159",
-		eviscerate = "Ausweiden",
-
 		-- Items / Buffs:
 		["arcaneshroud"] = "Arkaner Schleier",
 		["reducethreat"] = "Verringerte Bedrohung",
-
-		-- Leeches: no threat from heal
-		["holynova"] = "Heilige Nova", -- no heal or damage threat
-		["siphonlife"] = "Lebensentzug", -- no heal threat
-		["drainlife"] = "Blutsauger", -- no heal threat
-		["deathcoil"] = "Todesmantel",	
-
-		-- Fel Stamina and Fel Energy DO cause threat! GRRRRRRR!!!
-		--["felstamina"] = "Teufelsausdauer",
-		--["felenergy"] = "Teufelsenergie",
-
-		["bloodsiphon"] = "Bluttrinker", -- poisoned blood vs Hakkar
-
-		["lifetap"] = "Aderlass", -- no mana gain threat
-		["holyshield"] = "Heiliger Schild", -- multiplier
-		["tranquility"] = "Gelassenheit",
-		["distractingshot"] = "Ablenkender Schuss",
-		["earthshock"] = "Erdschock",
-		["rockbiter"] = "Felsbei\195\159er",
-		["fade"] = "Verblassen",
-		["thunderfury"] = "Donnerzorn",
 
 		-- Spell Sets
 		-- warlock descruction
 		["shadowbolt"] = "Schattenblitz",
 		["immolate"] = "Feuerbrand",
 		["conflagrate"] = "Feuersbrunst",
-		["searingpain"] = "Sengender Schmerz", -- 2 threat per damage
+		["searingpain"] = "Sengender Schmerz",
 		["rainoffire"] = "Feuerregen",
 		["soulfire"] = "Seelenfeuer",
 		["shadowburn"] = "Schattenbrand",
@@ -76,53 +68,50 @@ klhtm.string.data["deDE"] =
 		["arcaneexplosion"] = "Arkane Explosion",
 		["counterspell"] = "Gegenzauber",
 		
-		-- priest shadow. No longer used (R17).
-		["mindblast"] = "Gedankenschlag",	-- 2 threat per damage
-		--[[
-		["mindflay"] = "Gedankenschinden",
-		["devouringplague"] = "Verschlingende Seuche",
-		["shadowwordpain"] = "Schattenwort: Schmerz",
-		,
-		["manaburn"] = "Manabrand",
-		]]
+		-- priest shadow
+		["mindblast"] = "Gedankenschlag",
+		
 	},
+	-- required for correct behaviour
 	["power"] = 
 	{
 		["mana"] = "Mana",
 		["rage"] = "Wut",
 		["energy"] = "Energie",
 	},
-	["threatsource"] = -- these values are for user printout only
+	-- User Printout
+	["threatsource"] = 
 	{
 		["powergain"] = "Power Gain",
 		["total"] = "Total",
 		["special"] = "Spezial",
 		["healing"] = "Heilung",
 		["dot"] = "Dots",
-		["threatwipe"] = "NPC Zauber",
+		["threatwipe"] = "Threat Wipes",
 		["damageshield"] = "Schadensschild",
-		["whitedamage"] = "Wei\195\159er Schaden",
+		["whitedamage"] = "Weisser Schaden",
 	},
-	["talent"] = -- these values are for user printout only
+	-- User Printout
+	["talent"] = 
 	{
 		["defiance"] = "Trotz",
 		["impale"] = "Durchbohren",
 		["silentresolve"] = "Schweigsame Entschlossenheit",
-		["frostchanneling"] = "Frost-Kanalisierung",
-		["burningsoul"] = "Brennende Seele",
-		["healinggrace"] = "Geschick der Heilung",
 		["shadowaffinity"] = "Schattenaffinit\195\164t",
 		["druidsubtlety"] = "Druide Feingef\195\188hl",
 		["feralinstinct"] = "Instinkt der Wildnis",
 		["ferocity"] = "Wildheit",
 		["savagefury"] = "Ungez\195\164hmte Wut",
-		["tranquility"] = "Verbesserte Gelassenheit",
 		["masterdemonologist"] = "Meister der D\195\164monologie",
 		["arcanesubtlety"] = "Arkanes Feingef\195\188hl",
 		["righteousfury"] = "Zorn der Gerechtigkeit",
-		["sleightofhand"] = "Kunstgriff",
+		["tranquility"] = "Verbesserte Gelassenheit",
+		["healinggrace"] = "Geschick der Heilung",
+		["burningsoul"] = "Brennende Seele",
+		["frostchanneling"] = "Frost-Kanalisierung",
 	},
-	["threatmod"] = -- these values are for user printout only
+	-- User Printout
+	["threatmod"] = 
 	{
 		["tranquilair"] = "Beruhigende Winde",
 		["salvation"] = "Segen der Rettung",
@@ -131,12 +120,12 @@ klhtm.string.data["deDE"] =
 		["berserkerstance"] = "Berserkerhaltung",
 		["defiance"] = "Trotz",
 		["basevalue"] = "Basiswert",
-		["bearform"] = "B\195\164rgestalt",
-		["catform"] = "Katzengestalt",
+		["bearform"] = "B\195\164rform",
 		["glovethreatenchant"] = "erh\195\182te Bedrohung durch Handschuhverzauberung",
 		["backthreatenchant"] = "verringerte Bedrohung durch Umhangverzauberung",
 	},
 
+	-- User Printout
 	["sets"] = 
 	{
 		["bloodfang"] = "Blutfang",
@@ -145,19 +134,24 @@ klhtm.string.data["deDE"] =
 		["might"] = "der Macht",
 		["arcanist"] = "des Arkanisten",
 	},
+	-- required for correct behaviour
 	["boss"] = 
 	{
 		["speech"] = 
 		{
 			["razorphase2"] = "flieht w\195\164hrend die kontrollierenden Kr\195\164fte der Kugel schwinden",
 			["onyxiaphase3"] = "Mir scheint, dass Ihr noch eine Lektion braucht, sterbliche Wesen!",
-			["thekalphase2"] = "fill me with your RAGE",
-			["rajaxxfinal"] = "Unversch\195\164mter Narr! Ich werde euch h\195\182chstpers\195\182nlich t\195\182\195\182ten! will kill you myself!",
+			["rajaxxfinal"] = "Unversch\195\164mter Narr! Ich werde euch h\195\182chstpers\195\182nlich t\195\182öten! will kill you myself!",
 			["azuregosport"] = "Kommt ihr Wichte! Tretet mir gegen\195\188ber!",
 			["nefphase2"] = "BRENNT! Ihr Elenden! BRENNT!",
+			["thad1"] = "EAT YOUR BONES",
+			["thad2"] = "BREAK YOU!",
+			["thad3"] = "KILL!",
+			["noth1"] = "Die, trespasser!",
+			["noth2"] = "Glory to the master!",
+			["noth3"] = "Your life is forfeit!",
+			["ktphase2"] = "Pray for mercy!",
 		},
-		-- Some of these are unused. Also, if none is defined in your localisation, they won't be used,
-		-- so don't worry if you don't implement it.
 		["name"] = 
 		{	
 			["rajaxx"] = "General Rajaxx",
@@ -172,28 +166,16 @@ klhtm.string.data["deDE"] =
 		},
 		["spell"] = 
 		{
-			["shazzrahgate"] = "Portal von Shazzrah", -- "Shazzrah casts Gate of Shazzrah."
-			["wrathofragnaros"] = "Zorn des Ragnaros", -- "Ragnaros's Wrath of Ragnaros hits you for 100 Fire damage."
-			["timelapse"] = "Zeitraffer", -- "You are afflicted by Time Lapse."
 			["knockaway"] = "Wegschlagen",
-			["wingbuffet"] = "Fl\195\188gelsto\195\159",
+			["wingbuffet"] = "Fl\195\188gelsto\195\159", -- "Fl\195\188gelpuffer" appears to be Onyxia only. But that's -0 anyway.
 			["burningadrenaline"] = "Brennendes Adrenalin",
 			["twinteleport"] = "Zwillingsteleport",
+			["wrathofragnaros"] = "Zorn des Ragnaros",
+			["timelapse"] = "Zeitraffer",
 			["nothblink"] = "Blinzeln",
-			["sandblast"] = "Sandsto\195\159",
-			["fungalbloom"] = "Pilzwucher",
-			["hatefulstrike"] = "Hasserf\195\188llter Sto\195\159",
-			
-			-- 4 horsemen marks
-			mark1 = "Mal von Blaumeux",
-			mark2 = "Mal von Korth'azz",
-			mark3 = "Mal von Mograine",
-			mark4 = "Mal von Zeliek",
-			
-			-- Onyxia fireball (presumably same as mage)
-			["fireball"] = "Feuerball",
 		}
 	},
+	-- required for correct behaviour
 	["misc"] = 
 	{
 		["imp"] = "Wichtel", -- UnitCreatureFamily("pet")
@@ -218,7 +200,7 @@ klhtm.string.data["deDE"] =
 		},
 		["other"] = {	
 			["hit"] = "(.+) trifft (.+) f\195\188r %d+ Schaden%.", -- COMBATHITOTHEROTHER 
-			["crit"] = "(.+) trifft (.+) kritisch f\195\188r %d+ Schaden%.", -- COMBATHITCRITOTHEROTHER
+			["crit"] = "(.+) trifft (.+) kritisch für %d+ Schaden%.", -- COMBATHITCRITOTHEROTHER
 			["absorb"] = "(.+) greift an%. (.+) absorbiert allen Schaden%.", -- VSABSORBOTHEROTHER
 			["dodge"] = "(.+) greift an%. (.+) weicht aus%.", -- VSDODGEOTHEROTHER
 			["parry"] = "(.+) greift an%. (.+) pariert%.", -- VSPARRYOTHEROTHER
@@ -237,11 +219,11 @@ klhtm.string.data["deDE"] =
 				-- column headers for the raid view
 				["name"] = "Name",
 				["threat"] = "Bedrohung",
-				["pc"] = "%Max",			-- your threat as a percentage of the #1 player's threat
+				["pc"] = "%Max",
 			},
 			["stringshort"] = {
 				-- tooltip titles for the bottom bar strings
-				["tdef"] = "Threat Margin", -- the difference in threat between you and the MT / #1 in the list.
+				["tdef"] = "Threat Margin",
 				["targ"] = "Hauptziel",
 			},
 			["stringlong"] = {
@@ -258,7 +240,7 @@ klhtm.string.data["deDE"] =
 				["rage"] = "Wut",
 				["dam"] = "Schaden",
 				["threat"] = "Bedrohung",
-				["pc"] = "%B",			-- Abbreviation of %Threat
+				["pc"] = "%B",
 			},
 			-- text on the self threat reset button
 			["reset"] = "L\195\182schen",
@@ -266,9 +248,8 @@ klhtm.string.data["deDE"] =
 		["title"] = {
 			["text"] = {
 				-- the window titles
-				["long"] = "KTM %d.%d",	-- don't need to localise these
+				["long"] = "KTM %d.%d",
 				["short"] = "KTM",
-				
 			},
 			["buttonshort"] = {
 				-- the tooltip titles for command buttons
@@ -389,6 +370,18 @@ klhtm.string.data["deDE"] =
 		{
 			["startupmessage"] = "KLHThreatMeter Release |cff33ff33%s|r Revision |cff33ff33%s|r geladen. Tippe |cffffff00/ktm|r um Hilfe zu erhalten.",
 		},
+		["boss"] = 
+		{
+			["automt"] = "Das Hauptziel wurde automatisch auf %s gesetzt.",
+			["spellsetmob"] = "%s legt den %s Parameter von %ss %s F\195\164higkeit von %s auf %s.", -- "Kenco sets the multiplier parameter of Onyxia's Knock Away ability to 0.7"
+			["spellsetall"] = "%s legt die %s Parameter von %s F\195\164higkeiten von %s auf %s.",
+			["reportmiss"] = "%s berichtet, dass %ss %s ihn verfehlt hat.",
+			["reporttick"] = "%s berichtet, dass %ss %s ihn getroffen hat. Er hat bereits %s Stapelungen hinter sich, und wird an  %s mehr Stapelungen leiden.",
+			["reportproc"] = "%s berichtet, dass %sss %s seine Bedrohung von %s zu %s ge\195\164ndert hat..",
+			["bosstargetchange"] = "%s \195\164nderte das Zeil von %s (mit %s Bedrohung) zu %s (mit %s Bedrohung).",
+			["autotargetstart"] = "Du wirst automatisch das Threatmeter l\195\182schen und das Hauptziel neu setzen, wenn du das n\195\164chste Mal einen Weltboss anw\195\164hlst.",
+			["autotargetabort"] = "Das Hauptziel wurde bereits auf den Weltboss %s gesetzt.",
+		},
 		["data"] = 
 		{
 			["abilityrank"] = "Deine %s F\195\164higkeit ist Rang %s.",
@@ -407,34 +400,20 @@ klhtm.string.data["deDE"] =
 			["talent"] = "%d %s Talente gefunden.",
 			["rockbiter"] = "Dein Rang %d Felsbei\195\159er f\195\188gt %d Bedrohung zu erfolgreichen Nahkampfangriffen hinzu.",
 		},
-		
-		-- new in R17.7
-		["boss"] = 
-		{
-			["automt"] = "Das Hauptziel wurde automatisch auf %s gesetzt.",
-			["spellsetmob"] = "%s legt den %s Parameter von %ss %s F\195\164higkeit von %s auf %s.", -- "Kenco sets the multiplier parameter of Onyxia's Knock Away ability to 0.7"
-			["spellsetall"] = "%s legt die %s Parameter von %s F\195\164higkeiten von %s auf %s.",
-			["reportmiss"] = "%s berichtet, dass %ss %s ihn verfehlt hat.",
-			["reporttick"] = "%s berichtet, dass %ss %s ihn getroffen hat. Er hat bereits %s Stapelungen hinter sich, und wird an  %s mehr Stapelungen leiden.",
-			["reportproc"] = "%s berichtet, dass %sss %s seine Bedrohung von %s zu %s ge\195\164ndert hat..",
-			["bosstargetchange"] = "%s \195\164nderte das Zeil von %s (mit %s Bedrohung) zu %s (mit %s Bedrohung).",
-			["autotargetstart"] = "Du wirst automatisch das Threatmeter l\195\182schen und das Hauptziel neu setzen, wenn du das n\195\164chste Mal einen Weltboss anw\195\164hlst.",
-			["autotargetabort"] = "Das Hauptziel wurde bereits auf den Weltboss %s gesetzt.",
-		},
-		
 		["network"] = 
 		{
+
 			["newmttargetnil"] = "Es konnte kein neues Hauptziel festgelegt werden, da %s scheinbar nicht existiert.",
-			["newmttargetmismatch"] = "|cffffff00%s|r setzte das Hauptziel auf %s, aber sein eigenes Ziel ist %s. Sein eigenes Ziel wird stattdessen benutzt, \195\188berpr\195\188fen!",
-			["mtpollwarning"] = "Dein Hauptziel wurde auf %s gesetzt, aber dies konnte nicht \195\188berpr\195\188ft werden. Falls sich dieses falsch anh\195\182rt, bitte %s das Hauptziel erneut bekanntzugeben.",
+			["newmttargetmismatch"] = "%s setzte das Hauptziel auf %s, aber sein eigenes Ziel ist %s. Sein eigenes Ziel wird stattdessen benutzt, \195\188berprüfen!",
+			["mtpollwarning"] = "Dein Hauptziel wurde auf %s gesetzt, aber dies konnte nicht \195\188berpr\195\188ft werden. Falls sich dieses falsch anhört, bitte %s das Hauptziel erneut bekanntzugeben.",
 			["threatreset"] = "Das Threatmeter wurde von %s zur\195\188ckgesetzt.",
 			["newmt"] = "Das Hauptziel wurde auf '%s' festgelegt. (von %s)",
 			["mtclear"] = "Das Hauptziel wurde von %s gel\195\182scht.",
 			["knockbackstart"] = "R\195\188cksto\195\159 Entdeckung wurde von %s aktiviert.",
 			["knockbackstop"] = "R\195\188cksto\195\159 Entdeckung wurde von %s gestoppt.",
-			["aggrogain"] = "|cffffff00%s|r meldet 'Aggro bekommen' mit %d Bedrohung.",
-			["aggroloss"] = "|cffffff00%s|r meldet 'Aggro verloren' mit %d Bedrohung.",
-			["knockback"] = "|cffffff00%s|r meldet 'R\195\188cksto\195\159 abbekommen'. Er ist runter auf %d Bedrohung.",
+			["aggrogain"] = "%s meldet 'Aggro bekommen' mit %d Bedrohung.",
+			["aggroloss"] = "%s meldet 'Aggro verloren' mit %d Bedrohung.",
+			["knockback"] = "%s meldet 'R\195\188cksto\195\159 abbekommen'. Er ist runter auf %d Bedrohung.",
 			["knockbackstring"] = "%s meldet diesen R\195\188cksto\195\159text '%s'.",
 			["upgraderequest"] = "%s bittet dich um Upgrade auf Release %s von KLHThreatMeter. Du benutzt gerade Release %s.",
 			["remoteoldversion"] = "%s benutzt die veraltete Version %s von KLHThreatMeter. Bitte sag Ihm er soll auf Release %s upgraden.",
@@ -445,7 +424,7 @@ klhtm.string.data["deDE"] =
 			["versionrequest"] = "Fordere Versionsinformationen des Raids an. Antwort in 3 Sekunden.",
 			["versionrecent"] = "Diese Leute haben Release %s: { ",
 			["versionold"] = "Diese Leute haben \195\164ltere Versionen: { ",
-			["versionnone"] = "Diese Leute haben kein KLHThreatMeter, oder sind nicht im richtigen CTRA channel: { ",
+			["versionnone"] = "Diese Leute haben kein KLHThreatMeter, oder sind nicht im richtigen CTRA channel: { ",	
 			["channel"] = 
 			{
 				ctra = "CTRA Channel",
@@ -455,15 +434,8 @@ klhtm.string.data["deDE"] =
 			needtarget = "W\195\164hle zuerst einen Gegner aus, bevor du das Hauptziel setzt.",
 			upgradenote = "Benutzer veralteter Versionen der Mod wurden zum Upgraden aufgefordert.",
 			advertisestart = "Du wirst nun Spieler die Aggro ziehen dazu auffordern KLHThreatMeter zu installieren.",
-			advertisestop = "Du hast aufgeh\195\182rt automatisch Werbung f\195\188r KLHThreatMeter zu machen.",
+			advertisestop = "Du hast aufgehört automatisch Werbung f\195\188r KLHThreatMeter zu machen..",
 			advertisemessage = "Wenn du KLHThreatMeter h\195\164ttest, h\195\164ttest du vielleicht keine Aggro gezogen, %s.",
-		},
-
-		-- ok, so autohide isn't really a word, but just improvise
-		table = 
-		{
-			autohideon = "Das Fenster wird nun automatisch versteckt und angezeigt.",
-			autohideoff = "Das Fenster ist nicht länger automatisch versteckt.",
-		}
+		}			
 	}
 }

@@ -36,9 +36,15 @@ klhtm.string.data["enUS"] =
 		sinisterstrike = "Sinister Strike",
 		eviscerate = "Eviscerate",
 		
+		corruption = "Corruption",
+		curseofagony = "Curse of Agony",
+		siphonlife = "Siphon Life",
+		immolate = "Immolate",
 		-- Items / Buffs:
 		["arcaneshroud"] = "Arcane Shroud",
+		["theeyeofdiminution"] = "The Eye of Diminution",
 		["reducethreat"] = "Reduce Threat",
+		["notthere"] = "Not There",
 
 		-- Leeches: no threat from heal
 		["holynova"] = "Holy Nova", -- no heal or damage threat
@@ -141,6 +147,8 @@ klhtm.string.data["enUS"] =
 	{
 		["bloodfang"] = "Bloodfang",
 		["nemesis"] = "Nemesis",
+		["plagueheart"] = "Plagueheart",
+		["bonescythe"] = "Bonescythe",
 		["netherwind"] = "Netherwind",
 		["might"] = "Might",
 		["arcanist"] = "Arcanist",
@@ -155,7 +163,14 @@ klhtm.string.data["enUS"] =
 			["thekalphase2"] = "fill me with your RAGE",
 			["rajaxxfinal"] = "Impudent fool! I will kill you myself!",
 			["azuregosport"] = "Come, little ones",
-			["nefphase2"] = "BURN! You wretches! BURN!",
+			["nefphase2"] = "Burn, you wretches! Burn!",
+			["thad1"] = "EAT YOUR BONES",
+			["thad2"] = "BREAK YOU!",
+			["thad3"] = "KILL!",
+			["noth1"] = "Die, trespasser!",
+			["noth2"] = "Glory to the master!",
+			["noth3"] = "Your life is forfeit!",
+			["ktphase2"] = "Pray for mercy!",
 		},
 		-- Some of these are unused. Also, if none is defined in your localisation, they won't be used,
 		-- so don't worry if you don't implement it.
@@ -359,7 +374,7 @@ klhtm.string.data["enUS"] =
 	{
 		["main"] = 
 		{
-			["startupmessage"] = "KLHThreatMeter Release |cff33ff33%s|r Revision |cff33ff33%s|r loaded. Type |cffffff00/ktm|r for help.",
+			["startupmessage"] = "KLHThreatMeter v%s /ktm",
 		},
 		["data"] = 
 		{
@@ -383,13 +398,13 @@ klhtm.string.data["enUS"] =
 		-- new in R17.7
 		["boss"] = 
 		{
-			["automt"] = "The master target has been automatically set to |cffffff00%s|r.",
-			["spellsetmob"] = "|cffffff00%s|r sets the |cffffff00%s|r parameter of |cffffff00%s|r's |cffffff00%s|r ability to |cffffff00%s|r from |cffffff00%s|r.", -- "Kenco sets the multiplier parameter of Onyxia's Knock Away ability to 0.7"
-			["spellsetall"] = "|cffffff00%s|r sets the |cffffff00%s|r parameter of the |cffffff00%s|r ability to |cffffff00%s|r from |cffffff00%s|r.",
+["automt"] = "The master target has been automatically set to %s.",
+			["spellsetmob"] = "%s sets the %s parameter of %s's %s ability to %s from %s.", -- "Kenco sets the multiplier parameter of Onyxia's Knock Away ability to 0.7"
+			["spellsetall"] = "%s sets the %s parameter of the %s ability to %s from %s.",
 			["reportmiss"] = "%s reports that %s's %s missed him.",
 			["reporttick"] = "%s reports that %s's %s hit him. He has suffered %s ticks, and will be affected in %s more ticks.",
-			["reportproc"] = "|cffffff00%s|r reports that |cffffff00%s|r's |cffffff00%s|r changed his threat from |cffffff00%s|r to |cffffff00%s|r.",
-			["bosstargetchange"] = "|cffffff00%s|r changed tagets from |cffffff00%s|r (on |cffffff00%s|r threat) to |cffffff00%s|r (on |cffffff00%s|r threat).",
+			["reportproc"] = "%s reports that %s's %s changed his threat from %s to %s.",
+			["bosstargetchange"] = "%s changed tagets from %s (on %s threat) to %s (on %s threat).",
 			["autotargetstart"] = "You will automatically clear the meter and set the master target when you next target a world boss.",
 			["autotargetabort"] = "The master target has already been set to the world boss %s.",
 		},
